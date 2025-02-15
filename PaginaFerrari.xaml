@@ -1,0 +1,23 @@
+﻿<Page x:Class="F1RaceHub.PaginaFerrari"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:F1RaceHub"
+      Height="450" Width="800"
+      Title="PaginaFerrari"
+      Background="#180161"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="344" VerticalAlignment="Top" Width="629" Source="/Images/Ferrari1.png" Margin="32,0,0,0"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="155,357,0,0" VerticalAlignment="Top" x:Name="lblLeclerc" Foreground="White" FontFamily="Formula1 Display Regular" FontSize="20"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="155,400,0,0" VerticalAlignment="Top" x:Name="lblHamilton" Foreground="White" FontFamily="Formula1 Display Regular" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="32,351,0,0" VerticalAlignment="Top" Width="100" Source="/Images/leclerc.png"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="32,397,0,0" VerticalAlignment="Top" Width="100" Source="/Images/hamilton.png"/>
+        <Label Content="Punti totali Ferrari:" HorizontalAlignment="Left" Margin="345,375,0,0" VerticalAlignment="Top" FontFamily="Formula1 Display Regular" FontSize="20" Foreground="White"/>
+        <Label x:Name="lblTotFerrari" Content="0" HorizontalAlignment="Left" Margin="569,375,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Formula1 Display Bold" Foreground="White"/>
+
+
+    </Grid>
+</Page>

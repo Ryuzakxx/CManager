@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D658A1F-9C67-493A-97F8-FBC5DB4C4FA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>F1RaceHub</RootNamespace>
+    <AssemblyName>F1RaceHub</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatiGlobali.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PaginaAlpine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaAstonMartin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaClassifica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaFerrari.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaGara.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaHaas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaKick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaMcLaren.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaMercedes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaRedBull.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaVCARB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaWilliams.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PaginaAlpine.xaml.cs">
+      <DependentUpon>PaginaAlpine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaAstonMartin.xaml.cs">
+      <DependentUpon>PaginaAstonMartin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaClassifica.xaml.cs">
+      <DependentUpon>PaginaClassifica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaFerrari.xaml.cs">
+      <DependentUpon>PaginaFerrari.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaGara.xaml.cs">
+      <DependentUpon>PaginaGara.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaHaas.xaml.cs">
+      <DependentUpon>PaginaHaas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaKick.xaml.cs">
+      <DependentUpon>PaginaKick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMcLaren.xaml.cs">
+      <DependentUpon>PaginaMcLaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMercedes.xaml.cs">
+      <DependentUpon>PaginaMercedes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaRedBull.xaml.cs">
+      <DependentUpon>PaginaRedBull.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaVCARB.xaml.cs">
+      <DependentUpon>PaginaVCARB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaWilliams.xaml.cs">
+      <DependentUpon>PaginaWilliams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\f1.ttf" />
+    <Resource Include="Fonts\f1bold.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\alpine.png" />
+    <Resource Include="Images\ArabiaSaudita.png" />
+    <Resource Include="Images\aston.png" />
+    <Resource Include="Images\Australia.png" />
+    <Resource Include="Images\Bahrain.png" />
+    <Resource Include="Images\Cina.png" />
+    <Resource Include="Images\f1logo.png" />
+    <Resource Include="Images\ferrari.png" />
+    <Resource Include="Images\Ferrari1.png" />
+    <Resource Include="Images\Giappone.png" />
+    <Resource Include="Images\haas.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\Imola.png" />
+    <Resource Include="Images\kick.png" />
+    <Resource Include="Images\mclaren.png" />
+    <Resource Include="Images\McLaren1.png" />
+    <Resource Include="Images\mercedes.png" />
+    <Resource Include="Images\Mercedes1.png" />
+    <Resource Include="Images\Miami.png" />
+    <Resource Include="Images\Monaco.png" />
+    <Resource Include="Images\redbull.png" />
+    <Resource Include="Images\vcarb.png" />
+    <Resource Include="Images\williams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="MVVM\Model\" />
+    <Folder Include="MVVM\ViewModel\" />
+    <Folder Include="MVVM\View\" />
+    <Folder Include="Theme\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RedBull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Aston.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="alpine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vcarb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="haas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="williams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Brasile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\australiaC.png" />
+    <Resource Include="Images\bahrainC.png" />
+    <Resource Include="Images\ImolaC.png" />
+    <Resource Include="Images\interlagos.png" />
+    <Resource Include="Images\suzuka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BelgioC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Belgio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Piloti\ALBON.png" />
+    <Resource Include="Images\Piloti\ALONSO.png" />
+    <Resource Include="Images\Piloti\ANTONELLI.png" />
+    <Resource Include="Images\Piloti\BOTTAS.png" />
+    <Resource Include="Images\Piloti\COLAPINTO.png" />
+    <Resource Include="Images\Piloti\GASLY.png" />
+    <Resource Include="Images\Piloti\HADJAR.png" />
+    <Resource Include="Images\Piloti\HAMILTON.png" />
+    <Resource Include="Images\Piloti\HULKENBERG.png" />
+    <Resource Include="Images\Piloti\LAWSON.png" />
+    <Resource Include="Images\Piloti\LECLERC.png" />
+    <Resource Include="Images\Piloti\MAGNUSSEN.png" />
+    <Resource Include="Images\Piloti\NORRIS.png" />
+    <Resource Include="Images\Piloti\OCON.png" />
+    <Resource Include="Images\Piloti\PIASTRI.png" />
+    <Resource Include="Images\Piloti\RUSSEL.png" />
+    <Resource Include="Images\Piloti\STROLL.png" />
+    <Resource Include="Images\Piloti\TSUNODA.png" />
+    <Resource Include="Images\Piloti\VERSTAPPEN.png" />
+    <Resource Include="Images\Piloti\ZHOU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cmanager.png" />
+    <Resource Include="Images\descrizione.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\albon.png" />
+    <Resource Include="Images\alonso.png" />
+    <Resource Include="Images\antonelli.png" />
+    <Resource Include="Images\bottas.png" />
+    <Resource Include="Images\colapinto.png" />
+    <Resource Include="Images\gasly.png" />
+    <Resource Include="Images\hadjar.png" />
+    <Resource Include="Images\hamilton.png" />
+    <Resource Include="Images\hulkenberg.png" />
+    <Resource Include="Images\lawson.png" />
+    <Resource Include="Images\leclerc.png" />
+    <Resource Include="Images\magnussen.png" />
+    <Resource Include="Images\norris.png" />
+    <Resource Include="Images\ocon.png" />
+    <Resource Include="Images\piastri.png" />
+    <Resource Include="Images\russell.png" />
+    <Resource Include="Images\stroll.png" />
+    <Resource Include="Images\tsunoda.png" />
+    <Resource Include="Images\verstappen.png" />
+    <Resource Include="Images\zhou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\riquadro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="riquadro.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

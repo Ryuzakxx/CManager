@@ -1,0 +1,23 @@
+﻿<Page x:Class="F1RaceHub.PaginaMercedes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:F1RaceHub"
+      mc:Ignorable="d" 
+      d:DesignHeight="472.4" d:DesignWidth="801.2"
+      Title="PaginaMercedes"
+      Background="#180161"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="365" Margin="10,10,0,0" VerticalAlignment="Top" Width="653" Source="/Images/Mercedes1.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="10,380,0,0" VerticalAlignment="Top" Width="100" Source="/Images/russell.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="10,425,0,0" VerticalAlignment="Top" Width="100" Source="/Images/antonelli.png"/>
+        <Label x:Name="lblRussell" Content="0" HorizontalAlignment="Left" Margin="126,387,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Formula1 Display Bold" FontSize="16"/>
+        <Label x:Name="lblAntonelli" Content="0" HorizontalAlignment="Left" Margin="126,430,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Formula1 Display Bold" FontSize="16"/>
+        <Label Content="Punti totali Mercedes:" HorizontalAlignment="Left" Margin="290,405,0,0" VerticalAlignment="Top" FontFamily="Formula1 Display Regular" FontSize="20" Foreground="White"/>
+        <Label x:Name="lblTotMercedes" Content="0" HorizontalAlignment="Left" Margin="548,405,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Formula1 Display Bold" Foreground="White"/>
+    </Grid>
+</Page>
+
